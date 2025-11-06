@@ -8,6 +8,6 @@ namespace Semaforo.Models
 {
     internal class Semaforo
     {
-        public int color { get; set; }
+        
     }
 }
