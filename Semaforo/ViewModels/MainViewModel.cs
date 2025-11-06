@@ -10,8 +10,6 @@ namespace Semaforo.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {
-        
-        
         private readonly Color _colorEncendidoRojo=Colors.Red;
         private readonly Color _colorEncendidoAmarillo=Colors.Yellow;
         private readonly Color _colorEncendidoVerde=Colors.Green;
