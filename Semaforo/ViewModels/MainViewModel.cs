@@ -24,12 +24,13 @@ namespace Semaforo.ViewModels
         [ObservableProperty]
         private Color _colorSemaforo3;
 
+
         #region CONSTRUCTOR 
         public MainViewModel()
         {
-            _colorSemaforo1 = _colorEncendidoRojo;
-            _colorSemaforo2 = _colorEncendidoAmarillo;
-            _colorSemaforo3 = _colorEncendidoVerde;
+            _colorSemaforo1 = _colorDefecto;
+            _colorSemaforo2 = _colorDefecto;
+            _colorSemaforo3 = _colorDefecto;
         }
         #endregion
 
@@ -40,11 +41,15 @@ namespace Semaforo.ViewModels
             if (ColorSemaforo1 == _colorDefecto)
             {
                 ColorSemaforo1 = _colorEncendidoRojo;
+                ColorSemaforo2 = _colorDefecto;
+                ColorSemaforo3 = _colorDefecto;
             }
+            /*
             else
             {
                 ColorSemaforo1 = _colorDefecto;
             }   
+            */
         }
         [RelayCommand]
         private void encenderSemaforo2()
@@ -52,11 +57,15 @@ namespace Semaforo.ViewModels
             if (ColorSemaforo2 == _colorDefecto)
             {
                 ColorSemaforo2 = _colorEncendidoAmarillo;
+                ColorSemaforo1 = _colorDefecto;
+                ColorSemaforo3 = _colorDefecto;
             }
+            /*
             else
             {
                 ColorSemaforo2 = _colorDefecto;
             }
+            */
         }
         [RelayCommand]
         private void encenderSemaforo3()
@@ -64,11 +73,15 @@ namespace Semaforo.ViewModels
             if (ColorSemaforo3 == _colorDefecto)
             {
                 ColorSemaforo3 = _colorEncendidoVerde;
+                ColorSemaforo2 = _colorDefecto;
+                ColorSemaforo1 = _colorDefecto;
             }
+            /*
             else
             {
                 ColorSemaforo3 = _colorDefecto;
             }
+            */
         }
         #endregion
     }
