@@ -12,8 +12,25 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            
-            
+
+            <Button
+                BackgroundColor="{Binding ColorSemaforo1}"
+                Command="{Binding encenderSemaforo1Command}"
+                HeightRequest="220"
+                WidthRequest="220"
+                />
+            <Button
+                BackgroundColor="{Binding ColorSemaforo2}"
+                Command="{Binding encenderSemaforo2Command}"
+                HeightRequest="220"
+                WidthRequest="220"
+                />
+            <Button
+                BackgroundColor="{Binding ColorSemaforo3}"
+                Command="{Binding encenderSemaforo3Command}"
+                HeightRequest="220"
+                WidthRequest="220"
+                />
         </VerticalStackLayout>
     </ScrollView>
 
