@@ -18,18 +18,22 @@
                 Command="{Binding encenderSemaforo1Command}"
                 HeightRequest="220"
                 WidthRequest="220"
+                CornerRadius="120"
+                
                 />
             <Button
                 BackgroundColor="{Binding ColorSemaforo2}"
                 Command="{Binding encenderSemaforo2Command}"
                 HeightRequest="220"
                 WidthRequest="220"
+                CornerRadius="120"
                 />
             <Button
                 BackgroundColor="{Binding ColorSemaforo3}"
                 Command="{Binding encenderSemaforo3Command}"
                 HeightRequest="220"
                 WidthRequest="220"
+                CornerRadius="120"
                 />
         </VerticalStackLayout>
     </ScrollView>
